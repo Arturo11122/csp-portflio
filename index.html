@@ -1,23 +1,156 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<style type="text/css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-       background-color: rgb(66, 219, 185);
-     }
+    font-family: "Times New Roman", Times, serif ;
+    padding: 10px;
+    background-color: rgb(66, 219, 185);
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #EEEEEE;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color:rgb(66, 219, 185);
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
 </style>
-<meta charset="utf-8">
-<title>About Me</title>
 </head>
 <body>
-<a href="index.html">Home</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="aboutme.html">About Me</a>
-<h1>This is my First Website!</h1>
-<p1 style="font-family:courier;"> This is my first website it seems... I have no idea 
- what I am doing.</p1>
-<pre style="font-family:courier;">Since I have no idea what I am doing, 
-here is a pictue of pepe the frog.</pre>
-<img src="images/pepe.jpg" height="175">
+
+<div class="header">
+  <h1>Arturo's Website</h1>
+  <p>This is where the magic begins and also where I place my Computer Science work/reflections</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home Page</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="portfolio2.html">Portfolio</a>
+  <a href="https://mrengstromadmirer.weebly.com/" style="float:right">Secret Website</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>This is my second favorite picture of the internet.</h2>
+      <h5>"Developed in the early 1970s, it has successfully explained almost all experimental results and precisely predicted a wide variety of phenomena."</h5>
+      <img src="images/The Standard Model.jpg" alt="Google" style="height:500px;">
+      <p>The reason why this is my second favorite favorite picture on the internet because it relates to my major and my passion in life. </p>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="images/pepe.jpg" alt="Canopy" style="height:100px;">
+      <p>If you want to learn about me, just click the About Me link. </p>
+    </div>
+    <div class="card">
+      <h3>Content will be uploaded at a later time.</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>God said,"[&nabla;&#8729;E=&rho;/&epsilon;]
+[&nabla;&#8729;B=0]
+[&nabla;*E=-&part;B/&part;t]
+[&nabla;*B=&mu;(J+&epsilon;&part;B/&part;t)]" and there was light.</h2>
+</div>
+
 </body>
 </html>
